@@ -1,0 +1,22 @@
+{
+  "name": "civicpulse-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm --workspace=@civicpulse/web-citizen run dev",
+    "dev:citizen": "npm --workspace=@civicpulse/web-citizen run dev",
+    "dev:inspector": "npm --workspace=@civicpulse/app-inspector run dev",
+    "dev:admin": "npm --workspace=@civicpulse/web-admin run dev",
+    "backend": "cd backend && python -m uvicorn civicpulse_app.main:app --port 8000 --reload",
+    "build": "npm run build --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "type-check": "npm run type-check --workspaces --if-present"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}

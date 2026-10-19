@@ -1,0 +1,9 @@
+{
+  "name": "CivicPulse Inspector Field Staff",
+  "short_name": "CP Inspector",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#d97706",
+  "orientation": "portrait"
+}

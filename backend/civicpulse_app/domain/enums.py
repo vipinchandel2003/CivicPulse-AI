@@ -1,0 +1,37 @@
+from enum import Enum
+
+
+class UserRole(str, Enum):
+    CITIZEN = "CITIZEN"
+    FIELD_INSPECTOR = "FIELD_INSPECTOR"
+    WARD_CSI = "WARD_CSI"
+    ZONAL_OFFICER = "ZONAL_OFFICER"
+    DEPT_HOD = "DEPT_HOD"
+    SUPER_ADMIN = "SUPER_ADMIN"
+
+
+class Department(str, Enum):
+    SOLID_WASTE = "SOLID_WASTE"
+    ROADS_DRAINAGE = "ROADS_DRAINAGE"
+    ELECTRICAL = "ELECTRICAL"
+    WATER_WORKS = "WATER_WORKS"
+    GENERAL = "GENERAL"
+
+
+class IssueStatus(str, Enum):
+    RECEIVED = "RECEIVED"
+    MERGED = "MERGED"
+    TRIAGED = "TRIAGED"
+    ASSIGNED = "ASSIGNED"
+    UNROUTED = "UNROUTED"
+    IN_PROGRESS = "IN_PROGRESS"
+    PENDING_AUDIT = "PENDING_AUDIT"
+    PENDING_REVIEW = "PENDING_REVIEW"
+    RESOLVED = "RESOLVED"
+    REOPENED = "REOPENED"
+
+
+class PriorityLevel(str, Enum):
+    CRITICAL = "CRITICAL"
+    HIGH = "HIGH"
+    STANDARD = "STANDARD"
